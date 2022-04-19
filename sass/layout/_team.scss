@@ -7,15 +7,15 @@
     flex-direction: row;
 }
 
-.team-list-item {
+.team-list__item {
     flex-basis: calc((100% - 30px) / 4);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.team-list-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.team-content-wrapper {
+.team-list__content-wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 32px;
@@ -25,7 +25,7 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-subtitle {
+.team-list__subtitle {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -35,7 +35,7 @@
     color: var(--title-txt-color);
 }
 
-.team-description {
+.team-list__description {
     padding-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;

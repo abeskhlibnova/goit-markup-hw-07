@@ -3,19 +3,19 @@
     flex-direction: row;
 }
 
-.employment-list-item {
+.employment-list__item {
     flex-basis: calc((100% - 30px) / 3);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.employment-list-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.employment-list-item-wrapper {
+.employment-list__item-wrapper {
     position: relative;
 }
 
-.overlay-employment {
+.employment-list__overlay {
     position: absolute;
     bottom: 0;
     left: 0;
